@@ -12,10 +12,10 @@ const app = express();
 app.use(express.json());
 app.use(cors()); // Enable CORS if your frontend is on a different domain
 
-const CLIENT_ID = "1";
-const CLIENT_SECRET = "1";
-const REDIRECT_URI = "1";
-const REFRESH_TOKEN = "1";
+const CLIENT_ID = process.env.CLIENT_ID;
+const CLIENT_SECRET = process.env.CLIENT_SECRET;
+const REDIRECT_URI = process.env.REDIRECT_URI;
+const REFRESH_TOKEN = process.env.REFRESH_TOKEN;
 
 const oAuth2Client = new google.auth.OAuth2(
   CLIENT_ID,

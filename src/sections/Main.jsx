@@ -1,10 +1,10 @@
 
-import './main2.css'
-import codechef from './images/codechef1.png'
-import github from './images/github.png'
-import linked_in from './images/linked_in.png'
+import './Main.css'
+import codechef from '../assets/images/codechef1.png'
+import github from '../assets/images/github.png'
+import linked_in from '../assets/images/linked_in.png'
 import { motion } from 'framer-motion';
-import leetcodes from './images/leetcodes.png';
+import leetcodes from '../assets/images/leetcodes.png';
 
 
 

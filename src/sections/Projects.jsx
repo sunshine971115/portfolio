@@ -1,9 +1,9 @@
 import React from 'react'
-import Card from './Card';
-import restaurant from"./images/ivan-stern-LOLSb7m6XkU-unsplash.jpg"
-import chess from"./images/chess.jpg"
-import snake from "./images/snake.jpg"
-import wise_way from"./images/wise_way.jpg"
+import Card from '../components/Card';
+import restaurant from '../assets/images/ivan-stern-LOLSb7m6XkU-unsplash.jpg'
+import chess from '../assets/images/chess.jpg'
+import snake from '../assets/images/snake.jpg'
+import wise_way from '../assets/images/wise_way.jpg'
 import { motion } from 'framer-motion';
 
 const Projects = () => {

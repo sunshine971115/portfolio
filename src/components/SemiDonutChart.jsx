@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './new.css'; // Ensure the correct path to your CSS file
+import './SemiDonutChart.css';
 import { useInView } from 'react-intersection-observer';
 
 const SemiDonutChart = ({ percentage, fill, txt }) => {

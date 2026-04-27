@@ -1,9 +1,9 @@
 import React from 'react';
-import './why.css';
-import scholar from './images/scholarship.png';
-import project from './images/project.png';
-import codechef from './images/codechef.png';
-import leetcode from './images/leetcode.png';
+import './WhyHireMe.css';
+import scholar from '../assets/images/scholarship.png';
+import project from '../assets/images/project.png';
+import codechef from '../assets/images/codechef.png';
+import leetcode from '../assets/images/leetcode.png';
 import { motion } from 'framer-motion';
 
 const WhyHireMe = () => {

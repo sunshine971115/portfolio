@@ -4,8 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPaperPlane, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
-import BackToTopButton from './BackToTopButton';
-import './stylle.css';
+import BackToTopButton from '../components/BackToTopButton';
+import './ContactForm.css';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({

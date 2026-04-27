@@ -1,8 +1,8 @@
 import React from 'react'
-import './skills.css'
-import './new.css'
+import './Skills.css'
+import '../components/SemiDonutChart.css'
 import { motion } from 'framer-motion';
-import SemiDonutChart from './SemiDonutChart';
+import SemiDonutChart from '../components/SemiDonutChart';
 
 const Skills = () => {
   return (

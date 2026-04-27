@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Praneeth2025.github.io/portfolio",
+  "homepage": "https://sunshine971115.github.io/portfolio",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -15,8 +15,8 @@
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "framer-motion": "^11.2.13",
-    "googleapis": "^140.0.1",
-    "nodemailer": "^6.9.14",
+    "googleapis": "^171.4.0",
+    "nodemailer": "^8.0.6",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-intersection-observer": "^9.10.3",
@@ -51,6 +51,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1"
+    "gh-pages": "^6.3.0"
   }
 }

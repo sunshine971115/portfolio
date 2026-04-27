@@ -32,7 +32,7 @@ async function sendMail(formData) {
       service: "gmail",
       auth: {
         type: "OAuth2",
-        user: "vamsipraneeth2004@gmail.com",
+        user: "tiehe.dev1115@gmail.com",
         clientId: CLIENT_ID,
         clientSecret: CLIENT_SECRET,
         refreshToken: REFRESH_TOKEN,
@@ -65,7 +65,7 @@ app.post("/api/send", async (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 3033;
+const PORT = process.env.PORT || 3003;
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });

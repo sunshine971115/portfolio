@@ -1,15 +1,56 @@
-<h1>Portfolio Website (MERN Stack)</h1>
-Welcome to my portfolio website, built with the MERN stack (MongoDB, Express.js, React.js, and Node.js). This project showcases my skills and experience through a dynamic and interactive web application.
+# Portfolio
 
-<h3>Features:</h3>
+Personal portfolio website built with **Vite + React 18 + TypeScript + Tailwind CSS**, plus an Express + Nodemailer contact endpoint.
 
-<h4>Responsive Design:</h4> Clean, modern UI that adapts to various screen sizes.
-<h4>Interactive Components:</h4> Built with React.js for a smooth user experience.
-<h4>Backend Integration:</h4> Node.js and Express.js power the server-side operations and API interactions.
-<h4>Showcase Projects:</h4> Highlighting my work with detailed descriptions and links.
+## Stack
 
+- **Vite** — fast dev server & build
+- **React 18** + **TypeScript**
+- **Tailwind CSS** — utility-first styling
+- **Framer Motion** — animations
+- **Express + Nodemailer** — contact form backend (Gmail OAuth2)
+- **gh-pages** — deployment
 
-<h4>preview for my website</h4>
+## Scripts
 
+```bash
+npm run dev        # start Vite dev server (proxies /api → :3033)
+npm run build      # type-check + production build → dist/
+npm run preview    # preview production build
+npm run lint       # eslint
+npm run format     # prettier
+npm run server     # start the Express contact API
+npm run deploy     # build + publish dist/ to gh-pages
+```
 
-![Screenshot 2024-08-23 134120](https://github.com/user-attachments/assets/6c30fcc0-cb31-455d-a384-4858f9392b68)
+## Environment
+
+Create a `.env` for the contact server:
+
+```
+CLIENT_ID=...
+CLIENT_SECRET=...
+REDIRECT_URI=...
+REFRESH_TOKEN=...
+PORT=3033
+```
+
+Front-end can override the API base via `VITE_API_URL` (defaults to `http://localhost:3033`).
+
+## Project structure
+
+```
+src/
+  components/   # reusable UI (Navbar, Section, ProjectCard, …)
+  sections/     # page sections (Hero, About, Skills, Projects, Contact, …)
+  assets/       # images
+  App.tsx
+  main.tsx
+  index.css     # tailwind layers + base styles
+server/
+  server.js     # Express contact endpoint
+```
+
+## Deploy
+
+`npm run deploy` builds and pushes `dist/` to the `gh-pages` branch. The Vite `base` is set to `/portfolio/` to match the `homepage` URL.

@@ -1,13 +1,42 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-bg text-white font-sans;
+    background-image:
+      radial-gradient(circle at 15% 10%, rgba(3, 176, 253, 0.12), transparent 40%),
+      radial-gradient(circle at 85% 90%, rgba(120, 60, 200, 0.12), transparent 40%);
+    background-attachment: fixed;
+  }
+  ::selection {
+    @apply bg-accent/30 text-white;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-6xl px-6;
+  }
+  .heading {
+    @apply text-3xl md:text-4xl font-bold tracking-tight text-white;
+  }
+  .heading-accent {
+    @apply text-accent;
+  }
+  .glass {
+    @apply rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-sm;
+  }
+  .btn-primary {
+    @apply inline-flex h-12 items-center justify-center rounded-full bg-accent px-8 font-semibold text-bg transition
+           hover:bg-accent-soft hover:shadow-glow active:scale-[0.98];
+  }
+  .btn-outline {
+    @apply inline-flex h-12 items-center justify-center rounded-full border-2 border-accent bg-transparent px-8
+           font-semibold text-accent transition hover:shadow-glow active:scale-[0.98];
+  }
 }
